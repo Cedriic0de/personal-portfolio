@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+  <title>Cedric Ngcobo | Portfolio </title>
+
+  <!-- Stylesheets -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" type="text/css">
+  
+  <!-- Box icons -->
+ <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+ <!-- Google Fonts  -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500&family=Nunito:wght@300;400;500;600&family=Pacifico&display=swap" rel="stylesheet">  
+</head>
+<body>
+
+  <header class="header">
+    <div class="container nav-wrapper">
+      <!-- Logo -->
+      <a href="#" class="logo">CN</a>
+      <!-- Hamburger icon -->
+      <input class="side-menu" type="checkbox" id="side-menu"/>
+      <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+      <!-- Menu -->
+      <nav class="nav">
+          <ul class="menu">
+              <li><a href="#">Home</a></li>
+              <li><a href="#about">About</a> </li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a type="button" class="mode-btn" id="mode-btn" onclick="toggleMode()"> <i class="fas fa-sun"></i> </a></li>
+          </ul>
+      </nav>
+    </div> 
+  </header>
+
+  <!-- Main Section -->
+  <main class="hero" id="hero">
+    <div class="container row main-wrapper">
+      <div class="col-lg-6 col-md-6 col-sm-12 content">
+        <h3>Hi, I'm</h3> 
+        <h2>Cedric Ngcobo</h2>
+        <h1>Web Developer</h1>
+
+        <a type="button" class="light-btn" href="#projects">Explore my work <i class="fas fa-angle-right"></i> </a>     
+        <a type="button" class="dark-btn resume-btn" href="#projects">View Resume</a>     
+      
+      </div>
+
+      <img class="image-fluid working-illustrator" src="images/illustrator.svg" alt="illustrator">
+    </div>
+  </main>
+
+  <!-- About Section -->
+  <section class="container about card-trans" id="about">
+    <div class=" row about-wrapper">
+      <div class="col-lg-6 col-md-6 col-sm-12 content__box">
+        <h2>About Me</h2>
+        <p class="about-content">
+          I'm a self taught web developer with a great passion for creating beautiful websites.
+        </p>
+        <button class="light-btn" id="modalBtn" href="">Read More</button>     
+      </div>
+      <!-- The Modal -->
+      <div id="aboutModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2>About Me</h2>
+            <span class="close">&times;</span>
+          </div>
+
+          <div class="modal-box">
+            <div class="modal-about">
+              <div class="separator">
+                I'm Cedric Ngcobo, a frontend developer who is passionate about building dynamic, user-friendly, and responsive websites.
+                I began my web development career in the second semester of 2021 as I was working on a team for my senior project. 
+                I continued in 2022 as I was nearing the end of my academic degree. I kept going after my course was through and still do.
+              </div>
+
+              <div class="separator">
+                My current stack includes, <span id="html">HTML</span> , <span id="css">CSS</span>, <span id="strap">Bootstrap</span> and <span id="js">JavaScript</span>.
+                I have experience working with <span id="nodejs">NodeJS</span> and <span id="mongo">MongoDB</span>, and i'm in process 
+                of learning <span id="react">ReactJS</span> and continuously learning JavaScript, creating projects.
+              </div>
+
+              <div class="separator">
+                I'm currently open to employment options in IT organizations where I can benefit the company and please users.
+                Here you can see some of my <a href="#projects" class="line">work</a>.
+                I appreciate you visiting my website, and I look forward to speaking with you.
+              </div>
+
+            </div>
+              <img class="modal-img image-fluid" src="images/profile_photo.jpg" alt="profile-photo">
+          </div>
+  
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-md-6 col-sm-12 skills card-trans">
+        <h2>Skills &amp; Technologies</h2> 
+        <br/>
+        <div class="row skills__content">
+          <div class="col-3 skills__box">
+            <i class='bx bxl-html5' ></i>
+            <p>HTML</p>
+          </div>
+          <div class="col-3 skills__box">
+            <i class='bx bxl-css3' ></i>
+            <p>CSS</p>
+          </div>
+          <div class="col-3 skills__box">
+            <i class='bx bxl-bootstrap' ></i>
+            <p>Bootstrap</p>
+          </div>
+          <div class="col-3 skills__box">
+            <i class='bx bxl-javascript' ></i>
+            <p>JavaScript</p>
+          </div>
+          
+          <div class="row skills__content small-font">
+            <div class="col-3 skills__box">
+              <i class='bx bxl-nodejs' ></i>
+              <p>NodeJS</p>
+            </div>
+            <div class="col-3 skills__box">
+              <i class='bx bxl-mongodb' ></i>
+              <p>MongoDB</p>
+            </div>
+            <div class="col-2 skills__box">
+              <i class='bx bxl-git' ></i>
+              <p>Git</p>
+            </div>
+            <div class="col-2 skills__box">
+              <i class='bx bxl-c-plus-plus' ></i>
+              <p>C++</p>
+            </div>
+            <div class="col-2 skills__box">
+              <i class="fas fa-database"></i>
+              <p>SQL</p>
+            </div>
+            
+          </div>
+          
+        </div>
+    
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects card-trans" id="projects">
+
+    <!-- First Projects Row -->
+    <div class="container projects-wrapper">
+      <h2>Projects</h2>
+      <div class="row projects-box">
+        <div class="col-lg-4 col-md-6 col-sm-12 project">
+          <div class="card card-trans">
+            <img src="images/barbershop-preview.png" class="image-fluid card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Barbershop Appointment Booking</h5>
+              <p class="card-text">
+                This is an appointment booking system for my local barbershop. Users can view services offered and book appointment.
+                 The system notifies the barbershop and provides confirmation to the user via email.
+              </p>
+              <p class="card-text stack">
+                <i class='bx bxl-html5' ></i>
+                <i class='bx bxl-css3' ></i>
+                <i class='bx bxl-bootstrap' ></i>
+                <i class='bx bxl-javascript' ></i>
+                <i class='bx bxl-nodejs' ></i>
+                <i class='bx bxl-mongodb' ></i>
+              
+              </p>
+              <div class="card-btns">
+                <a href="https://github.com/Cedriic0de/the-barbershop"  type="button" class="dark-btn" target="_blank">View Code <i class="fab fa-github"></i> </a>
+                <a  type="button" class="light-btn disabled opacity-0.2">View Live <i class="fas fa-globe"></i> </a>  
+              </div>
+          
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12 project">
+          <div class="card card-trans">
+            <img src="images/accessors-preview.png" class="image-fluid card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Quick Accessors</h5>
+              <p class="card-text">
+                A collection of small API projects including an advice generator,
+                Weather App, Clock App, URL Shortener and Quick Password generator.
+                </p>
+              <p class="card-text stack">
+                <i class='bx bxl-html5' ></i>
+                <i class='bx bxl-css3' ></i>
+                <i class='bx bxl-bootstrap' ></i>
+                <i class='bx bxl-javascript' ></i>
+                <span>APIs</span>
+              
+              </p>
+              <div class="card-btns">
+                <a href="https://github.com/Cedriic0de/quick-generators"  type="button" class="dark-btn" target="_blank">View Code <i class="fab fa-github"></i> </a>
+                <a href="https://cedriic0de.github.io/quick-generators/"  type="button" class="light-btn disabled" target="_blank">View Live <i class="fas fa-globe"></i> </a>  
+              </div>
+          
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12 project">
+          <div class="card card-trans">
+            <img src="images/estate-preview.png" class="image-fluid card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Real Estate Landing</h5>
+              <p class="card-text">
+              I recreated a landing page design for an estate at Midrand. I looked at their website and felt like the user interface was poor, 
+              so i recreated an interface with not all their information added. 
+                </p>
+              <p class="card-text stack">
+                <i class='bx bxl-html5' ></i>
+                <i class='bx bxl-css3' ></i>
+                <i class='bx bxl-bootstrap' ></i>
+                <i class='bx bxl-javascript' ></i>              
+              </p>
+              <div class="card-btns">
+                <a href="https://github.com/Cedriic0de/real-estate-landing"  type="button" class="dark-btn" target="_blank">View Code <i class="fab fa-github"></i> </a>
+                <a href="https://cedriic0de.github.io/real-estate-landing/"  type="button" class="light-btn disabled" target="_blank">View Live <i class="fas fa-globe"></i> </a>  
+              </div>
+          
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+      <!-- Second Projects Row -->
+      <div class="row project-box last">
+        <div class="col-lg-4 col-md-6 col-sm-12 project">
+          <div class="card card-trans">
+            <img src="images/portfolio-preview.png" class="image-fluid card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Portfolio</h5>
+              <p class="card-text"></p>
+
+              <p class="card-text stack">
+                <i class='bx bxl-html5' ></i>
+                <i class='bx bxl-css3' ></i>
+                <i class='bx bxl-bootstrap' ></i>
+                <i class='bx bxl-javascript' ></i>              
+              </p>
+              <div class="card-btns">
+                <a href="#"  type="button" class="dark-btn">View Code <i class="fab fa-github"></i> </a>
+                <a href="#"  type="button" class="light-btn disabled">View Live <i class="fas fa-globe"></i> </a>  
+              </div>
+          
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12 project ">
+          <div class="card card-trans">
+            <img src="images/coming-soon.jpg" class="image-fluid card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">e-Shop</h5>
+              <p class="card-text hide">
+              An E-commerce site ... 
+                </p>
+              <p class="card-text stack hide">
+                <i class='bx bxl-html5' ></i>
+                <i class='bx bxl-css3' ></i>
+                <i class='bx bxl-bootstrap' ></i>
+                <i class='bx bxl-javascript' ></i> 
+                <i class='bx bxl-react' ></i>
+                <i class='bx bxl-NodeJS' ></i> 
+                <i class='bx bxl-mongodb' ></i>              
+              </p>
+              <div class="card-btns hide">
+                <a type="button" class="dark-btn disabled" target="_blank">View Code <i class="fab fa-github"></i> </a>
+                <a type="button" class="light-btn disabled" target="_blank">View Live <i class="fas fa-globe"></i> </a>  
+              </div>
+          
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="container contact card-trans" id="contact">
+    <h2>Contact</h2>
+    <p class="connect">It doesn't have to end here, let's connect!</p>
+    <div class="row contact-box">
+      <div class="col-lg-6 col-md-6 col-sm-12 contact-form">
+          <div class="form-floating mb-3 mt-3">
+            <input type="text" class="form-control" id="name" placeholder="Your Name" name="name" required>
+            <label for="name">Name</label>
+          </div>
+          
+          <div class="form-floating mt-3 mb-3">
+            <input type="email" class="form-control" id="email" placeholder="Enter password" name="email" required>
+            <label for="email">Email</label>
+          </div>
+
+          <div class="form-floating">
+            <textarea class="form-control" id="message" name="message" rows="5" cols="20" placeholder="Your message" required></textarea>
+            <label for="message">Message</label>
+          </div>
+          <button type="submit" class="dark-btn btn-submit" onclick="sendMail()">Send</button>
+          <!-- <input type="submit" class="dark-btn btn-submit" value="Send" onsubmit="sendMail()"> -->
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 socials">
+        <img src="images/contact-illustrator.svg" class="img-fluid contact-illustrator" alt="contact-illustrator">
+      
+        <div class="social-links">
+          <ul class="links">
+            <li class="link"><a href="https://github.com/Cedriic0de" target="_blank"> <i class='bx bxl-github' ></i> </a></li>
+            <li class="link"><a href="https://www.linkedin.com/in/cedric-ngcobo-5b198822b/" target="_blank"> <i class='bx bxl-linkedin-square' ></i> </a></li>
+            <li class="link"><a href="https://twitter.com/iamcedriic_" target="_blank"> <i class='bx bxl-twitter' ></i> </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+ </div>
+ 
+
+
+  <footer>
+    All Rights Reserved. ©2023. Built with 🖤
+</footer>
+<script src="app.js"></script>
+<script type="text/javascript"
+src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+  (function(){
+    emailjs.init("WFwUfZFTH8jj3HUtQ");
+  })();
+</script>
+</body>
+</html>
