@@ -683,13 +683,12 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    text-align: center;
   }
   .card-btns a {
     width: 100%;
   }
-  .card-btns a i {
-    float: right;
-  }
+  
   .socials {
     width: 100%;
     margin-top: 24px;
