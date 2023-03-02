@@ -51,27 +51,34 @@ window.addEventListener('scroll', handleScroll);
 
 // Getting Form data and sending email
 function sendMail(){
-	var params = {
-		name: document.getElementById("name").value,
-		email: document.getElementById("email").value,
-		message: document.getElementById("message").value,
-	};
+  var uName = document.getElementById("name").value;
+  var uEmail = document.getElementById("email").value;
+  var uMessage = document.getElementById("message").value;
 
-  const serviceID = "service_s3l1eqp";
-  const templateID = "template_8g73c7r";
+  if(uName === "" & uEmail === "" & uMessage === "") {
+    alert("Please enter information required to send message");
+  } else {
+    var params = {
+      name: uName,
+      email: uEmail,
+      message: uMessage,
+    };
   
-  emailjs.send(serviceID, templateID, params)
-  .then(
-    res => {
-      document.getElementById("name").value = "";
-      document.getElementById("email").value = "";
-      document.getElementById("message").value = "";
-      console.log(res);
-      alert("Your message was sent successfully");
-    })
-    .catch((err) => console.log(err));
+    const serviceID = "service_s3l1eqp";
+    const templateID = "template_8g73c7r";
+    
+    emailjs.send(serviceID, templateID, params)
+    .then(
+      res => {
+        document.getElementById("name").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("message").value = "";
+        console.log(res);
+        alert("Your message was sent successfully");
+      })
+      .catch((err) => console.log(err));
+  }	
 }
-
 
 // Loading animation
 window.addEventListener("load", () => {
