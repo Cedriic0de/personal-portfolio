@@ -678,8 +678,14 @@ footer {
   .project {
     margin-bottom: 24px;
   }
+  .card-btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
   .card-btns a {
-    width: 35%;
+    width: 100%;
   }
   .card-btns a i {
     float: right;
@@ -742,6 +748,15 @@ footer {
   .card, 
   .contact-form {
     margin-bottom: 2em;
+  }
+  .card-btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .card-btns a {
+    width: 100%;
   }
   .contact-illustrator {
     display: block;
