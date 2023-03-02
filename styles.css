@@ -667,9 +667,44 @@ footer {
     text-align: left;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .working-illustrator {
+    display: none;
+  }
+  .content__box {
+    border: none;
+    margin-bottom: 24px;
+  }
+  .project {
+    margin-bottom: 24px;
+  }
+  .card-btns a {
+    width: 35%;
+  }
+  .card-btns a i {
+    float: right;
+  }
+  .socials {
+    width: 100%;
+    margin-top: 24px;
+  }
+  .social-links, .contact-illustrator{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  } 
+} 
+
 @media screen and (max-width: 480px) {
   .content, .content-box {
     text-align: center;
+  }
+  .hero-btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
   }
   .working-illustrator {
     display: none;
