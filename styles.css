@@ -629,6 +629,7 @@ footer {
     width: auto;
   }
   .card-btns {
+     text-align: center;
     flex-direction: column;
     justify-content: space-evenly;
   }
